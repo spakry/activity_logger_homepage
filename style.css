@@ -28,7 +28,7 @@ header.hero {
 }
 
 header.hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -50,7 +50,7 @@ header.hero h1 {
   margin-bottom: 24px;
   font-weight: 700;
   line-height: 1.2;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 header.hero p {
   font-size: 1.2rem;
@@ -220,7 +220,7 @@ main {
   gap: 12px;
 }
 .section h2::before {
-  content: '✨';
+  content: "✨";
   font-size: 1.5rem;
 }
 .section p {
@@ -383,7 +383,7 @@ main {
 }
 
 .discord-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -400,7 +400,7 @@ main {
 }
 
 .discord-section h2::before {
-  content: '🎮';
+  content: "🎮";
 }
 
 .discord-section p {
@@ -546,21 +546,21 @@ footer {
   header.hero .hero-image {
     margin-top: 30px;
   }
-  
+
   main {
     padding: 60px 30px;
   }
-  
+
   .activity-demo {
     max-width: 100%;
     padding: 20px;
   }
-  
+
   .summary-stats {
     flex-direction: column;
     gap: 12px;
   }
-  
+
   .stat {
     display: flex;
     justify-content: space-between;
@@ -568,11 +568,11 @@ footer {
     padding: 8px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
-  
+
   .stat:last-child {
     border-bottom: none;
   }
-  
+
   .stat-label,
   .stat-value {
     display: inline;
