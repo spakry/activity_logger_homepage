@@ -421,7 +421,7 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  background: rgba(45, 55, 72, 0.9);
+  background: #87cefa;
   color: white;
   text-decoration: none;
   padding: 20px 40px;
@@ -429,15 +429,15 @@ main {
   font-size: 1.2rem;
   font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 24px rgba(135, 206, 250, 0.4);
   border: 2px solid rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(10px);
 }
 
 .discord-button:hover {
-  background: rgba(26, 32, 44, 0.95);
+  background: #6bb6ff;
   transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 12px 32px rgba(135, 206, 250, 0.6);
   border-color: rgba(255, 255, 255, 0.6);
 }
 
