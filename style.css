@@ -4,10 +4,11 @@
 }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  color: #333;
-  background-color: #f9f9f9;
-  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", Helvetica, Arial, sans-serif;
+  color: #2c3e50;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  line-height: 1.7;
+  font-size: 16px;
 }
 img {
   max-width: 100%;
@@ -15,27 +16,47 @@ img {
   display: block;
 }
 header.hero {
-  background-color: #0a1931;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: #ffffff;
-  padding: 60px 20px;
+  padding: 80px 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+header.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.05)"/><circle cx="10" cy="60" r="0.5" fill="rgba(255,255,255,0.05)"/><circle cx="90" cy="40" r="0.5" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
 }
 header.hero .content {
   flex: 1 1 50%;
   max-width: 600px;
+  position: relative;
+  z-index: 1;
 }
 header.hero h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 header.hero p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin: 0;
-  max-width: 500px;
+  max-width: 520px;
+  opacity: 0.95;
+  font-weight: 400;
 }
 header.hero .hero-image {
   flex: 1 1 40%;
@@ -50,78 +71,124 @@ header.hero .hero-image img {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 main {
-  padding: 40px 20px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .section {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  color: #0a1931;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #4a5568;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.section h2::before {
+  content: '✨';
+  font-size: 1.5rem;
 }
 .section p {
   margin-top: 0;
+  font-size: 1.1rem;
+  color: #2d3748;
 }
 
 .prominent-text {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 500;
-  line-height: 1.7;
-  color: #0a1931;
-  margin: 20px 0;
+  line-height: 1.8;
+  color: #4a5568;
+  margin: 24px 0;
+  padding: 24px;
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  border-radius: 16px;
+  border-left: 4px solid #667eea;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
 }
 .features ul {
   list-style: none;
   padding-left: 0;
+  display: grid;
+  gap: 20px;
 }
 .features li {
-  margin-bottom: 10px;
-  padding-left: 24px;
-  position: relative;
+  margin-bottom: 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(102, 126, 234, 0.1);
+  transition: all 0.3s ease;
+}
+.features li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 .features li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #007acc;
+  content: "🎯";
+  margin-right: 12px;
+  font-size: 1.2rem;
 }
 .form-container {
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
   max-width: 600px;
   margin: 0 auto;
+  border: 1px solid rgba(102, 126, 234, 0.1);
 }
 .form-container label {
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   display: block;
-  color: #0a1931;
+  color: #4a5568;
+  font-size: 1.1rem;
 }
 .form-container input,
 .form-container textarea {
   width: 100%;
-  padding: 10px 12px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
   font-size: 1rem;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.8);
+}
+.form-container input:focus,
+.form-container textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  background: #ffffff;
 }
 .form-container button {
-  background-color: #0a1931;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: #ffffff;
   border: none;
-  padding: 12px 20px;
-  border-radius: 4px;
-  font-size: 1rem;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+  width: 100%;
 }
 .form-container button:hover {
-  background-color: #112d52;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
 }
 /* Logs example section */
 .logs-container {
@@ -179,36 +246,72 @@ main {
 
 /* Discord community section */
 .discord-section {
-  background-color: #f0f8ff;
-  padding: 40px 20px;
-  border-radius: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  padding: 50px 30px;
+  border-radius: 20px;
   margin: 40px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.discord-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="discord-pattern" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23discord-pattern)"/></svg>');
+  opacity: 0.2;
+}
+
+.discord-section h2 {
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.discord-section h2::before {
+  content: '🎮';
+}
+
+.discord-section p {
+  color: rgba(255, 255, 255, 0.95);
+  position: relative;
+  z-index: 1;
 }
 
 .discord-invite {
   text-align: center;
   margin-top: 30px;
+  position: relative;
+  z-index: 1;
 }
 
 .discord-button {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  background: linear-gradient(135deg, #5865f2, #4752c4);
+  background: rgba(255, 255, 255, 0.2);
   color: white;
   text-decoration: none;
-  padding: 16px 32px;
-  border-radius: 12px;
-  font-size: 1.1rem;
+  padding: 20px 40px;
+  border-radius: 16px;
+  font-size: 1.2rem;
   font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(88, 101, 242, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
 }
 
 .discord-button:hover {
-  background: linear-gradient(135deg, #4752c4, #3c45a5);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(88, 101, 242, 0.4);
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .discord-icon {
@@ -292,11 +395,12 @@ main {
 }
 
 footer {
-  background-color: #0a1931;
+  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
   color: #ffffff;
   text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
+  padding: 40px 20px;
+  font-size: 1rem;
+  margin-top: 60px;
 }
 
 @media (max-width: 768px) {
