@@ -117,37 +117,37 @@
         Activity Logger. All rights reserved.
       </p>
     </footer>
-    
+
     <script>
       // Track form submissions
       function trackFormSubmission() {
-        if (typeof gtag !== 'undefined') {
-          gtag('event', 'form_submit', {
-            event_category: 'engagement',
-            event_label: 'contact_form'
+        if (typeof gtag !== "undefined") {
+          gtag("event", "form_submit", {
+            event_category: "engagement",
+            event_label: "contact_form",
           });
         }
       }
-      
+
       // Track Discord community clicks
       function trackDiscordClick() {
-        if (typeof gtag !== 'undefined') {
-          gtag('event', 'click', {
-            event_category: 'community',
-            event_label: 'discord_invite'
+        if (typeof gtag !== "undefined") {
+          gtag("event", "click", {
+            event_category: "community",
+            event_label: "discord_invite",
           });
         }
       }
-      
+
       // Track signup interest (when someone clicks the form)
-      document.addEventListener('DOMContentLoaded', function() {
-        const formInputs = document.querySelectorAll('#name, #email, #message');
-        formInputs.forEach(input => {
-          input.addEventListener('focus', function() {
-            if (typeof gtag !== 'undefined') {
-              gtag('event', 'signup_interest', {
-                event_category: 'engagement',
-                event_label: 'form_interaction'
+      document.addEventListener("DOMContentLoaded", function () {
+        const formInputs = document.querySelectorAll("#name, #email, #message");
+        formInputs.forEach((input) => {
+          input.addEventListener("focus", function () {
+            if (typeof gtag !== "undefined") {
+              gtag("event", "signup_interest", {
+                event_category: "engagement",
+                event_label: "form_interaction",
               });
             }
           });
