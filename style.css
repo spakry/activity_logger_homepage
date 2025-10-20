@@ -63,6 +63,14 @@ main {
 .section p {
   margin-top: 0;
 }
+
+.prominent-text {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #0a1931;
+  margin: 20px 0;
+}
 .features ul {
   list-style: none;
   padding-left: 0;
