@@ -42,6 +42,7 @@ header.hero .content {
   max-width: 600px;
   position: relative;
   z-index: 1;
+  margin-left: 40px;
 }
 header.hero h1 {
   font-size: 3rem;
@@ -195,9 +196,10 @@ header.hero .hero-image {
   margin-bottom: 0;
 }
 main {
-  padding: 60px 20px;
+  padding: 60px 40px;
   max-width: 1200px;
   margin: 0 auto;
+  padding-left: 60px;
 }
 .section {
   margin-bottom: 60px;
@@ -531,15 +533,22 @@ footer {
   header.hero {
     flex-direction: column;
     text-align: center;
-    padding: 60px 20px;
+    padding: 60px 30px;
   }
   header.hero .content,
   header.hero .hero-image {
     flex: 1 1 100%;
     max-width: 100%;
   }
+  header.hero .content {
+    margin-left: 0;
+  }
   header.hero .hero-image {
     margin-top: 30px;
+  }
+  
+  main {
+    padding: 60px 30px;
   }
   
   .activity-demo {
