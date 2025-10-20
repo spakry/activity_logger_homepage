@@ -47,7 +47,7 @@ header.hero .hero-image img {
   border-radius: 8px;
   width: 100%;
   max-width: 400px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 main {
   padding: 40px 20px;
@@ -73,7 +73,7 @@ main {
   position: relative;
 }
 .features li::before {
-  content: '✓';
+  content: "✓";
   position: absolute;
   left: 0;
   top: 0;
@@ -83,7 +83,7 @@ main {
   background-color: #ffffff;
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   max-width: 600px;
   margin: 0 auto;
 }
@@ -119,7 +119,7 @@ main {
 .logs-container {
   background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin: 20px 0;
   max-width: 800px;
@@ -142,7 +142,7 @@ main {
 
 .log-time {
   flex: 0 0 120px;
-  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
   font-size: 0.9rem;
   color: #666;
   font-weight: 500;
@@ -182,25 +182,26 @@ footer {
     flex-direction: column;
     text-align: center;
   }
-  header.hero .content, header.hero .hero-image {
+  header.hero .content,
+  header.hero .hero-image {
     flex: 1 1 100%;
     max-width: 100%;
   }
   header.hero .hero-image {
     margin-top: 20px;
   }
-  
+
   .log-entry {
     flex-direction: column;
   }
-  
+
   .log-time {
     flex: none;
     margin-right: 0;
     margin-bottom: 8px;
     font-size: 0.85rem;
   }
-  
+
   .logs-container {
     padding: 15px;
     margin: 15px 0;
