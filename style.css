@@ -115,6 +115,60 @@ main {
 .form-container button:hover {
   background-color: #112d52;
 }
+/* Logs example section */
+.logs-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 20px 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.log-entry {
+  display: flex;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.log-entry:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.log-time {
+  flex: 0 0 120px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+  margin-right: 20px;
+  padding-top: 2px;
+}
+
+.log-content {
+  flex: 1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.log-content strong {
+  color: #0a1931;
+  font-weight: 600;
+}
+
+.logs-note {
+  font-style: italic;
+  color: #666;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
 footer {
   background-color: #0a1931;
   color: #ffffff;
@@ -134,5 +188,21 @@ footer {
   }
   header.hero .hero-image {
     margin-top: 20px;
+  }
+  
+  .log-entry {
+    flex-direction: column;
+  }
+  
+  .log-time {
+    flex: none;
+    margin-right: 0;
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+  }
+  
+  .logs-container {
+    padding: 15px;
+    margin: 15px 0;
   }
 }
