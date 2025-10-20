@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>High level activity logger</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "GA_MEASUREMENT_ID");
+    </script>
   </head>
   <body>
     <header class="hero">
@@ -70,7 +81,7 @@
         <p>We’re building this platform now. Join our mailing list or send us your feedback so we can tailor the experience to you.</p>
         <div class="form-container">
           <!-- Replace your-email@example.com with the address you'd like to receive messages -->
-          <form action="https://formsubmit.co/mjunyeopkim@gmail.com" method="POST">
+          <form action="https://formsubmit.co/mjunyeopkim@gmail.com" method="POST" onsubmit="trackFormSubmission()">
             <!-- These hidden inputs help set the subject and disable reCAPTCHA -->
             <input type="hidden" name="_subject" value="New interest from the AI Logger homepage" />
             <input type="hidden" name="_captcha" value="false" />
@@ -85,6 +96,17 @@
           </form>
         </div>
       </section>
+      <section class="section discord-section">
+        <h2>Join Our Early Access Community</h2>
+        <p>Want to be among the first to experience our activity logger? Join our Discord community for exclusive early access, insider updates, and direct feedback channels with our development team.</p>
+        <div class="discord-invite">
+          <a href="discord.html" class="discord-button" onclick="trackDiscordClick()">
+            <span class="discord-icon">🎮</span>
+            Join Our Discord Community
+          </a>
+          <p class="discord-note">Early access • Beta testing • Direct developer feedback</p>
+        </div>
+      </section>
     </main>
     <footer>
       <p>
@@ -95,5 +117,42 @@
         Activity Logger. All rights reserved.
       </p>
     </footer>
+    
+    <script>
+      // Track form submissions
+      function trackFormSubmission() {
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'form_submit', {
+            event_category: 'engagement',
+            event_label: 'contact_form'
+          });
+        }
+      }
+      
+      // Track Discord community clicks
+      function trackDiscordClick() {
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'click', {
+            event_category: 'community',
+            event_label: 'discord_invite'
+          });
+        }
+      }
+      
+      // Track signup interest (when someone clicks the form)
+      document.addEventListener('DOMContentLoaded', function() {
+        const formInputs = document.querySelectorAll('#name, #email, #message');
+        formInputs.forEach(input => {
+          input.addEventListener('focus', function() {
+            if (typeof gtag !== 'undefined') {
+              gtag('event', 'signup_interest', {
+                event_category: 'engagement',
+                event_label: 'form_interaction'
+              });
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
