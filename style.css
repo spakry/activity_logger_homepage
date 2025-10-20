@@ -235,6 +235,7 @@ main {
   line-height: 1.8;
   color: #4a5568;
   margin: 24px 0;
+  margin-left: 60px;
   padding: 24px;
   background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
   border-radius: 16px;
@@ -549,6 +550,10 @@ footer {
 
   main {
     padding: 60px 30px;
+  }
+  
+  .prominent-text {
+    margin-left: 20px;
   }
 
   .activity-demo {
