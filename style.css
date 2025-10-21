@@ -420,6 +420,7 @@ main {
 .discord-button {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   background: #87cefa;
   color: white;
@@ -432,6 +433,8 @@ main {
   box-shadow: 0 8px 24px rgba(135, 206, 250, 0.4);
   border: 2px solid rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(10px);
+  text-align: center;
+  min-width: 280px;
 }
 
 .discord-button:hover {
