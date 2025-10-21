@@ -421,7 +421,6 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
   background: #87cefa;
   color: white;
   text-decoration: none;
