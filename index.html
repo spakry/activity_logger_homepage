@@ -15,7 +15,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desktop action logger</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='80' height='100' x='10' fill='%23667eea' rx='4'/><rect width='70' height='2' x='15' y='20' fill='white'/><rect width='50' height='2' x='15' y='30' fill='white'/><rect width='60' height='2' x='15' y='40' fill='white'/><rect width='45' height='2' x='15' y='50' fill='white'/><rect width='55' height='2' x='15' y='60' fill='white'/><rect width='40' height='2' x='15' y='70' fill='white'/><circle cx='75' cy='15' r='3' fill='white'/></svg>" />
     <link rel="stylesheet" href="style.css" />
 
     <!-- Google Analytics -->
@@ -32,8 +31,11 @@
   <body>
     <header class="hero">
       <div class="content">
-        <h1>✨ High level action logger</h1>
-        <p>Hey there! 👋 Ever end your day wondering "What did I actually accomplish today?" We've been there too! That's exactly why we built this activity logger - it automatically captures every meaningful action you take throughout the day, so you never have to wonder again. Plus, with automatic PII redaction, your sensitive information stays protected. Get instant summaries of your work patterns and optimize your workflow with data-driven insights from your logged actions. Pretty cool, right? 🚀</p>
+        <h1>Desktop action logger</h1>
+        <p>Have you ever wondered at the end of the day what you accomplished today and how you could improve your workflow if you remember what you did? If servers have logs that you can examine, then you should too! </p>
+
+        <p>I built this tool to automatically capture the high-level action you are performing and produce logs which you or AI can examine later.</p>
+      
       </div>
       <div class="hero-image">
         <div class="activity-demo">
@@ -92,6 +94,11 @@
       </div>
     </header>
     <main>
+      <section class="section built-with-privacy">
+        <h2>Built with privacy 🔒</h2>
+        <p>The application works by capturing screenshots when you perform an action, and produces a log using LLM.</p>
+        <p>Sensitive personal identifiable information is automatically redacted before it is sent to the LLM to respect your privacy.</p>
+      </section>
       <section class="section">
         <p class="prominent-text">At the end of the day, have you ever forgotten what you did, or find it takes a lot of time to remember? Wished you had an automatic log like a server to analyze your workflows? This smart daemon silently capturing your high‑level actions in the background. Every meaningful task gets logged automatically, creating a complete record of your day that you can summarize, review, and use to optimize your workflow patterns.</p>
       </section>

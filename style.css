@@ -371,6 +371,29 @@ main {
   font-size: 0.9rem;
 }
 
+/* Built with Privacy Section */
+.built-with-privacy {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border-left: 4px solid #48bb78;
+}
+
+.built-with-privacy h2 {
+  color: #2d3748;
+  margin-bottom: 20px;
+}
+
+.built-with-privacy p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4a5568;
+  margin-bottom: 16px;
+}
+
+.built-with-privacy p:last-child {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
 /* Privacy Screenshot Section */
 .privacy-screenshot {
   background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
