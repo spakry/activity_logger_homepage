@@ -663,16 +663,16 @@ footer {
   .stat-value {
     display: inline;
   }
-  
+
   .pii-features {
     grid-template-columns: 1fr;
     gap: 12px;
   }
-  
+
   .screenshot-container {
     padding: 15px;
   }
-  
+
   .redacted-screenshot {
     min-height: 250px;
   }
