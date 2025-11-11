@@ -53,11 +53,17 @@ header.hero h1 {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 header.hero p {
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   margin: 0;
   max-width: 520px;
   opacity: 0.95;
   font-weight: 400;
+}
+header.hero .content p:first-of-type {
+  margin-top: 16px;
+}
+header.hero .content p + p {
+  margin-top: 24px;
 }
 header.hero .hero-image {
   flex: 1 1 40%;
