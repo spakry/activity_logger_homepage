@@ -31,10 +31,12 @@
   <body>
     <header class="hero">
       <div class="content">
-        <h1>Desktop action logger</h1>
-        <p>Have you ever wondered at the end of the day what you accomplished today and how you could improve your workflow if you remember what you did? If servers have logs that you can examine, then you should too!</p>
+        <h1>Always remember what you did on your desktop.</h1>
+        <p>If servers have logs that you can examine, then you 
+           should too!</p>
 
-        <p>I built this tool to automatically capture the high-level action you are performing and produce logs which you or AI can examine later.</p>
+        <p>Recorder automatically captures the action you are performing and 
+          writes logs.</p>
       </div>
       <div class="hero-image">
         <div class="activity-demo">
@@ -96,7 +98,7 @@
       <section class="section built-with-privacy">
         <h2>Built with privacy</h2>
         <p>The application works by capturing screenshots when you perform an action, and produces a log using LLM.</p>
-        <p>Sensitive personal identifiable information is automatically redacted before it is sent to the LLM to respect your privacy.</p>
+        <p>Sensitive <strong> personal identifiable information is automatically redacted </strong> before it is sent to the LLM to respect your privacy.</p>
       </section>
       <section class="section">
         <p class="prominent-text">At the end of the day, have you ever forgotten what you did, or find it takes a lot of time to remember? Wished you had an automatic log like a server to analyze your workflows? This smart daemon silently capturing your high‑level actions in the background. Every meaningful task gets logged automatically, creating a complete record of your day that you can summarize, review, and use to optimize your workflow patterns.</p>
@@ -161,7 +163,7 @@
           <h3>See PII Redaction in Action</h3>
           <p class="screenshot-description">Below is an example of how our automatic redaction protects your sensitive information in captured screenshots:</p>
           <div class="screenshot-container">
-            <img src="pii-redacted-screenshot.png" alt="Example screenshot showing automatic PII redaction with sensitive information blurred" class="redacted-screenshot" />
+            <img src="privacy-redaction.png" alt="Screenshot of Activity Logger interface with personal data automatically redacted" class="redacted-screenshot" />
             <p class="screenshot-caption">Sensitive information is automatically detected and redacted before storage. Your privacy is protected by default! 🔐</p>
           </div>
         </div>
