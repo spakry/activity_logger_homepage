@@ -60,7 +60,7 @@ header.hero p {
   font-weight: 400;
 }
 header.hero .content p:first-of-type {
-  margin-top: 16px;
+  margin-top: 46px;
 }
 header.hero .content p + p {
   margin-top: 24px;
@@ -79,7 +79,7 @@ header.hero .hero-image {
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  max-width: 400px;
+  max-width: 750px;
   width: 100%;
 }
 
@@ -93,13 +93,13 @@ header.hero .hero-image {
 .demo-header h3 {
   color: #4a5568;
   margin: 0 0 8px 0;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 
 .demo-date {
   color: #718096;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 
@@ -112,7 +112,7 @@ header.hero .hero-image {
   align-items: center;
   padding: 12px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 .demo-log-entry:last-child {
@@ -125,12 +125,14 @@ header.hero .hero-image {
   min-width: 45px;
   margin-right: 12px;
   font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
 }
 
 .demo-action {
   color: #2d3748;
   flex: 1;
+  font-size: 1.05rem;
+  line-height: 1.5;
 }
 
 .demo-summary {
@@ -182,7 +184,7 @@ header.hero .hero-image {
 .demo-insights h4 {
   color: #4a5568;
   margin: 0 0 12px 0;
-  font-size: 1.1rem;
+  font-size: 1.35rem;
   font-weight: 600;
 }
 
@@ -193,9 +195,9 @@ header.hero .hero-image {
 
 .demo-insights li {
   color: #2d3748;
-  font-size: 0.85rem;
+  font-size: 1.05rem;
   margin-bottom: 6px;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 .demo-insights li:last-child {
