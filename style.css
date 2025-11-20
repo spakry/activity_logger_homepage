@@ -65,6 +65,100 @@ header.hero .content p:first-of-type {
 header.hero .content p + p {
   margin-top: 24px;
 }
+.download-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 36px;
+  padding: 18px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.06));
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(12px);
+}
+.download-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.download-prompt {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.download-icon-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.download-icon-link {
+  display: inline-flex;
+  border-radius: 24px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.download-icon-link:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+.download-icon {
+  width: 92px;
+  height: 92px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.22);
+  margin-top: 0;
+  object-fit: cover;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.08));
+  padding: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+.download-copy h3 {
+  margin: 6px 0 8px 0;
+  font-size: 1.35rem;
+  color: #ffffff;
+}
+.download-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+.download-description {
+  margin: 0 0 14px 0;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1.05rem;
+}
+.download-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #56ccf2 0%, #7f7eff 50%, #ff6fb1 100%);
+  color: #0b1026;
+  text-decoration: none;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-weight: 700;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.download-button:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.3);
+}
+.download-meta {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+}
 header.hero .hero-image {
   flex: 1 1 40%;
   display: flex;
@@ -658,6 +752,19 @@ footer {
   }
   header.hero .hero-image {
     margin-top: 30px;
+  }
+  .download-cta {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .download-button {
+    width: 100%;
+    justify-content: center;
+  }
+  .download-meta {
+    width: 100%;
+    text-align: center;
   }
 
   main {

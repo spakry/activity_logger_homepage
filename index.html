@@ -35,8 +35,25 @@
         <p>If servers have logs that you can examine, then you 
            should too!</p>
 
-        <p>Recorder automatically captures the action you are performing and 
-          writes logs.</p>
+      <p>Recorder automatically captures the action you are performing and 
+        writes logs.</p>
+        <div class="download-cta">
+          <div class="download-copy">
+            <div class="download-eyebrow">macOS · DMG installer</div>
+            <h3>Activity Logger v1.0.0</h3>
+            <div class="download-prompt">Click the log to download instantly.</div>
+            <div class="download-icon-row">
+              <a class="download-icon-link" href="downloads/Logger-1.0.0.dmg" download onclick="trackDownloadClick()">
+                <img src="download-icon.png" alt="Download Activity Logger app" class="download-icon" />
+              </a>
+              <div class="download-meta">110 MB • Apple silicon & Intel</div>
+            </div>
+            <p class="download-description">Own your timeline with local-first logging, privacy-safe redaction, and useful daily summaries.</p>
+            <div class="download-actions">
+              <a class="download-button" href="downloads/Logger-1.0.0.dmg" download onclick="trackDownloadClick()">Download for macOS</a>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="hero-image">
         <div class="activity-demo">
@@ -212,6 +229,16 @@
           gtag("event", "click", {
             event_category: "community",
             event_label: "discord_invite",
+          });
+        }
+      }
+
+      // Track DMG downloads
+      function trackDownloadClick() {
+        if (typeof gtag !== "undefined") {
+          gtag("event", "download", {
+            event_category: "app",
+            event_label: "macos_dmg_v1_0_0",
           });
         }
       }
