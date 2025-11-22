@@ -28,3 +28,4 @@ jobs:
             --delete \
             --exclude ".git/*" \
             --exclude ".github/*"
+ 
